@@ -1,0 +1,1 @@
+Traduzione italiana di [Learn OpenGL](https://learnopengl.com/Introduction) scritta da [Joey de Vries](https://twitter.com/JoeyDeVriez) ([licenza](https://creativecommons.org/licenses/by/4.0/legalcode)) fatta da [Licantropo3392](https://github.com/Licantropo3392/Learn-OpenGL-in-Italiano)
