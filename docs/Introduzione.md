@@ -42,6 +42,6 @@ Alcune parole sono visualizzate con un colore diverso per rendere ancora più ch
 
 ### Riferimenti alle funzioni OpenGL
 
-Una funzionalità particolarmente apprezzata di LearnOpenGL è la possibilità di esaminare la maggior parte delle funzioni di OpenGL ovunque appaiano nei contenuti. Ogni volta che nel testo si trova una funzione documentata sul sito, questa apparirà con una sottolineatura leggermente visibile. Puoi passare il mouse sopra la funzione e, dopo un breve intervallo, una finestra pop-up mostrerà le informazioni rilevanti su di essa, inclusa una panoramica chiara di ciò che fa effettivamente la funzione. Passa il mouse sopra `glEnable` [*TODO*] per vederla in azione.
+Una funzionalità particolarmente apprezzata di LearnOpenGL è la possibilità di esaminare la maggior parte delle funzioni di OpenGL ovunque appaiano nei contenuti. Ogni volta che nel testo si trova una funzione documentata sul sito, questa apparirà con una sottolineatura leggermente visibile. Puoi passare il mouse sopra la funzione e, dopo un breve intervallo, una finestra pop-up mostrerà le informazioni rilevanti su di essa, inclusa una panoramica chiara di ciò che fa effettivamente la funzione. Passa il mouse sopra `glEnable` (**TODO**) per vederla in azione.
 
 Ora che hai preso un po' di confidenza con la struttura del sito, salta alla sezione *Primi passi* per iniziare il tuo viaggio in OpenGL!
