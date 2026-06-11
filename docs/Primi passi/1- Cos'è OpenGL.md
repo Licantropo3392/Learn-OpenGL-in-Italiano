@@ -4,6 +4,8 @@ Prima di iniziare il nostro viaggio, dovremmo innanzitutto definire cosa sia eff
 
 La specifica di OpenGL stabilisce esattamente quale debba essere il risultato/output di ciascuna funzione e come debba comportarsi. Spetta poi agli sviluppatori che *implementano* questa specifica trovare una soluzione pratica su come far operare tale funzione. Poiché la specifica di OpenGL non fornisce dettagli sull'implementazione, le versioni effettive sviluppate di OpenGL possono avere implementazioni diverse, a patto che i loro risultati siano conformi alla specifica (e risultino quindi identici per l'utente).
 
+![Logo di OpenGL](https://learnopengl.com/img/getting-started/opengl.jpg "Logo di OpenGL"){ align=right }
+
 Coloro che sviluppano le librerie OpenGL effettive sono solitamente i produttori di schede grafiche. Ogni scheda grafica che acquisti supporta versioni specifiche di OpenGL, che sono le versioni sviluppate appositamente per quella (serie di) scheda. Quando si utilizza un sistema Apple, la libreria OpenGL è mantenuta dalla stessa Apple, mentre sotto Linux esiste una combinazione tra le versioni dei produttori hardware e gli adattamenti di queste librerie da parte di appassionati. Ciò significa anche che ogni volta che OpenGL mostra un comportamento strano che non dovrebbe avere, la colpa è molto probabilmente dei produttori di schede grafiche (o di chiunque abbia sviluppato/mantenuto la libreria).
 
 !!! note "Nota"

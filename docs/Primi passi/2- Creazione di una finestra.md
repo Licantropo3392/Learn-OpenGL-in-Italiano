@@ -122,7 +122,7 @@ Come puoi vedere, il codice appare complesso ed è un processo estremamente noio
 
 ### Configurazione di GLAD
 
-GLAD è una libreria open source che gestisce tutto il lavoro noioso di cui abbiamo appena parlato. Ha un sistema di configurazione leggermente diverso rispetto alla maggior parte delle librerie open source tradizionali: utilizza un servizio web in cui possiamo indicare per quale versione di OpenGL desideriamo definire e caricare tutte le relative funzioni.
+GLAD è una libreria [open source](https://github.com/Dav1dde/glad) che gestisce tutto il lavoro noioso di cui abbiamo appena parlato. Ha un sistema di configurazione leggermente diverso rispetto alla maggior parte delle librerie open source tradizionali: utilizza un [sito web](http://glad.dav1d.de/) in cui possiamo indicare quale versione di OpenGL desideriamo definire e caricare tutte le relative funzioni.
 
 1. Vai sul [sito web di GLAD](https://glad.dav1d.de/).
 2. Assicurati che il linguaggio (*Language*) sia impostato su **C++**.
@@ -130,12 +130,13 @@ GLAD è una libreria open source che gestisce tutto il lavoro noioso di cui abbi
 4. Assicurati che il profilo (*Profile*) sia impostato su **Core** e che l'opzione **Generate a loader** sia spuntata.
 5. Ignora le estensioni (per ora) e clicca su **Generate** per produrre i file della libreria.
 
-> **Attenzione:** Assicurati di utilizzare la versione **GLAD1** dal link sopra indicato. Esiste anche una versione GLAD2, ma non funzionerà con il codice di queste guide.
+!!! warning "Attenzione"
+    Assicurati di utilizzare la versione **GLAD1** dal [link](https://glad.dav1d.de/) sopra indicato. Esiste anche una versione GLAD2, ma non funzionerà con il codice di queste guide.
 
 A questo punto GLAD ti metterà a disposizione un file zip contenente due cartelle `include` e un singolo file `glad.c`.
 
 * Copia entrambe le cartelle di inclusione (`glad` e `KHR`) nella tua directory degli `include` personalizzata (o aggiungi un percorso extra che punti a queste cartelle).
-* Aggiungi il file `glad.c` direttamente all'interno del tuo progetto di Visual Studio (puoi trascinarlo nei *File di sorgente*).
+* Aggiungi il file `glad.c` all'interno del tuo progetto.
 
 Dopo aver completato questi passaggi, sarai in grado di aggiungere la seguente direttiva di inclusione in cima al tuo file di codice:
 
@@ -143,7 +144,7 @@ Dopo aver completato questi passaggi, sarai in grado di aggiungere la seguente d
 #include <glad/glad.h> 
 ```
 
-Premendo il pulsante di compilazione non dovresti riscontrare alcun errore. Se è così, siamo pronti a passare al prossimo capitolo, dove vedremo come utilizzare concretamente GLFW e GLAD per configurare un contesto OpenGL e mostrare una finestra a schermo! Controlla un'ultima volta che tutte le directory di inclusione e delle librerie siano corrette e che i nomi inseriti nel linker corrispondano esattamente ai file.
+Premendo il pulsante di compilazione non dovresti riscontrare alcun errore. Se è così, siamo pronti a passare al prossimo capitolo, dove vedremo come utilizzare concretamente GLFW e GLAD per configurare un contesto OpenGL e mostrare una finestra a schermo. Controlla un'ultima volta che tutte le directory di inclusione e delle librerie siano corrette e che i nomi inseriti nel linker corrispondano esattamente ai file.
 
 ---
 
