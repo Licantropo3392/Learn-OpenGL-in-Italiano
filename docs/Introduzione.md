@@ -36,9 +36,9 @@ Poiché questi forniscono solo frammenti di codice, ovunque sia necessario forni
 
 Alcune parole sono visualizzate con un colore diverso per rendere ancora più chiaro il loro significato speciale:
 
-- <span style="color: green;">**Definizione**</span>: le parole in *verde* specificano una definizione, ovvero un aspetto o un nome importante di qualcosa che probabilmente sentirai nominare spesso.
-- <span style="color: red;">**Struttura del programma**</span>: le parole in *rosso* specificano nomi di funzioni o nomi di classi.
-- <span style="color: blue;">**Variabili**</span>: le parole in *blu* specificano le variabili, incluse tutte le costanti di OpenGL.
+- <span style="color: green;">**Definizione**</span>: le parole in **verde** specificano una definizione, ovvero un aspetto o un nome importante di qualcosa che probabilmente sentirai nominare spesso.
+- <span style="color: red;">**Struttura del programma**</span>: le parole in **rosso** specificano nomi di funzioni o nomi di classi.
+- <span style="color: blue;">**Variabili**</span>: le parole in **blu** specificano le variabili, incluse tutte le costanti di OpenGL.
 
 ### Riferimenti alle funzioni OpenGL
 

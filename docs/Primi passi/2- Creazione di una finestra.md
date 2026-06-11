@@ -34,13 +34,13 @@ CMake è un tool in grado di generare file di progetto o di soluzione a scelta d
 
 Una volta installato, puoi scegliere di avviare CMake da riga di comando o tramite la loro interfaccia grafica (GUI). Per non complicare troppo le cose useremo l'interfaccia grafica. CMake richiede una cartella contenente il codice sorgente e una cartella di destinazione per i file binari. Per la cartella sorgente selezioniamo la radice della cartella del pacchetto sorgente di GLFW che abbiamo scaricato in precedenza e per la cartella di build creiamo una nuova cartella chiamata *build* e poi selezionala.
 
-![CMake GUI](https://learnopengl.com/img/getting-started/cmake.png "CMake GUI")
+![CMake GUI](https://learnopengl.com/img/getting-started/cmake.png "CMake GUI"){ loading=lazy }
 
 Una volta impostate le cartelle, clicca sul pulsante `Configure` in modo che CMake possa leggere le impostazioni richieste e il codice sorgente. Dovremo poi scegliere il generatore per il progetto: poiché stiamo usando Visual Studio 2019, sceglieremo l'opzione `Visual Studio 16` (Visual Studio 2019 è noto anche come Visual Studio 16). CMake mostrerà ora le possibili opzioni di build per configurare la libreria risultante. Possiamo lasciarle ai loro valori predefiniti e cliccare di nuovo su `Configure` per salvare le impostazioni. Infine, clicchiamo su `Generate` i file di progetto verranno generati nella cartella `build`.
 
 ### Compilazione
 
-Nella cartella `build` troverai un file chiamato `GLFW.sln`; aprilo con Visual Studio 2019. Poiché CMake ha generato un file di progetto che contiene già le giuste configurazioni, dobbiamo solo compilare la soluzione. Assicurati che la configurazione di compilazione in alto sia impostata su **Debug** e **x64**, quindi clicca su `Genera soluzione` (`Build Solution`). Questo produrrà un file di libreria compilato che si troverà in `build/src/Debug` col nome di `glfw3.lib`.
+Nella cartella `build` troverai un file chiamato `GLFW.sln`; aprilo con Visual Studio 2019. Poiché CMake ha generato un file di progetto che contiene già le giuste configurazioni, dobbiamo solo compilare la soluzione. Assicurati che la configurazione di compilazione in alto sia impostata su `Debug` e `x64`, quindi clicca su `Genera soluzione` (*Build Solution*). Questo produrrà un file di libreria compilato che si troverà in `build/src/Debug` col nome di `glfw3.lib`.
 
 Ora che abbiamo generato la libreria, dobbiamo assicurarci che il nostro IDE sappia dove trovare sia la libreria stessa che i file di inclusione per il nostro programma OpenGL. Ci sono due approcci comuni per farlo:
 
@@ -55,7 +55,7 @@ Una volta salvati i file in una posizione di tua scelta, possiamo iniziare a cre
 
 Per prima cosa apriamo Visual Studio e creiamo un nuovo progetto. Scegli **C++** se vengono mostrate più opzioni e seleziona `Progetto vuoto` (*Empty Project*) (ricordandoti di dare al progetto un nome appropriato). Dato che compileremo tutto a 64 bit e il progetto parte di default a 32 bit, dobbiamo cambiare il menu a discesa in alto (accanto a Debug) da `x86` a `x64`:
 
-![Menu a tendina](https://learnopengl.com/img/getting-started/x64.png "Menu a tendina")
+![Menu a tendina](https://learnopengl.com/img/getting-started/x64.png "Menu a tendina"){ loading=lazy }
 
 Fatto questo, abbiamo finalmente uno spazio di lavoro pronto per ospitare la nostra primissima applicazione OpenGL!
 
@@ -65,17 +65,17 @@ Affinché il progetto possa utilizzare GLFW, dobbiamo <span style="color: green;
 
 Possiamo istruire l'IDE affinché prenda in considerazione questa cartella quando cerca i file di libreria e di inclusione. Fai clic con il tasto destro sul nome del progetto nell'`Esploratore delle soluzioni` (`Solution Explorer`) e vai su `Proprietà`, poi su `Directory di VC++` (`VC++ Directories`) come da immagine:
 
-![Proprietà](https://learnopengl.com/img/getting-started/vc_directories.png "Proprietà")
+![Proprietà](https://learnopengl.com/img/getting-started/vc_directories.png "Proprietà"){ loading=lazy }
 
 Da qui in poi puoi aggiungere le tue cartelle per consentire al progetto di sapere dove cercare. Puoi farlo inserendo manualmente il percorso nel testo o cliccando sulla riga corrispondente e selezionando l'opzione `<Modifica...>` (`<Edit...>`). Fallo sia per le `Directory delle librerie` (`Library Directories`) che per le `Directory di inclusione` (`Include Directories`).
 
-![Library Directories](https://learnopengl.com/img/getting-started/include_directories.png "Library Directories")
+![Library Directories](https://learnopengl.com/img/getting-started/include_directories.png "Library Directories"){ loading=lazy }
 
 Qui puoi aggiungere tutte le cartelle extra che desideri e, da quel momento in poi, l'IDE cercherà anche in quelle directory. Non appena includi la cartella `Include` di GLFW, sarai in grado di trovare tutti i suoi file di intestazione scrivendo `#include <GLFW/...>`. Lo stesso vale per le directory delle librerie.
 
 Dato che Visual Studio ora può trovare tutti i file richiesti, possiamo finalmente linkare GLFW al progetto andando sulla scheda `Linker` e poi su `Input`:
 
-![Linker](https://learnopengl.com/img/getting-started/linker_input.png "Linker")
+![Linker](https://learnopengl.com/img/getting-started/linker_input.png "Linker"){ loading=lazy }
 
 Per collegare una libreria devi specificare il suo nome al linker. Poiché il nome della libreria è `glfw3.lib`, aggiungilo al campo `Dipendenze aggiuntive` (`Additional Dependencies`) (sia manualmente che usando l'opzione `<Modifica...>`) e da questo momento in poi, GLFW verrà collegata durante la compilazione.
 
