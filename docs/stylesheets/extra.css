@@ -1,0 +1,24 @@
+.text-red {
+  color: #d32f2f;
+}
+
+.text-green {
+  color: #2e7d32;
+}
+
+.text-blue {
+  color: #1565c0;
+}
+
+/* Variante per tema scuro */
+[data-md-color-scheme="slate"] .text-red {
+  color: #ef5350;
+}
+
+[data-md-color-scheme="slate"] .text-green {
+  color: #66bb6a;
+}
+
+[data-md-color-scheme="slate"] .text-blue {
+  color: #42a5f5;
+}
